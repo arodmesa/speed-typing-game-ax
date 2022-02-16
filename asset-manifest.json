@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/speed-typing-game-ax/static/css/main.1bed804f.css",
+    "main.js": "/speed-typing-game-ax/static/js/main.472aa1fe.js",
+    "static/js/787.28cb0dcd.chunk.js": "/speed-typing-game-ax/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Mochiy.ttf": "/speed-typing-game-ax/static/media/Mochiy.a343480e7534e19d0c78.ttf",
+    "static/media/PTSansNarrow-Bold.ttf": "/speed-typing-game-ax/static/media/PTSansNarrow-Bold.6c0b55dfa0028e0768af.ttf",
+    "static/media/victory.mp3": "/speed-typing-game-ax/static/media/victory.4f85e1568cd2fd08c466.mp3",
+    "static/media/PTSansNarrow-Regular.ttf": "/speed-typing-game-ax/static/media/PTSansNarrow-Regular.68e86cce5b8c98f6305b.ttf",
+    "static/media/beep_end.mp3": "/speed-typing-game-ax/static/media/beep_end.d24f84b0c398117970a3.mp3",
+    "static/media/beep_10s.mp3": "/speed-typing-game-ax/static/media/beep_10s.c092c611a7ac15c0e028.mp3",
+    "index.html": "/speed-typing-game-ax/index.html",
+    "main.1bed804f.css.map": "/speed-typing-game-ax/static/css/main.1bed804f.css.map",
+    "main.472aa1fe.js.map": "/speed-typing-game-ax/static/js/main.472aa1fe.js.map",
+    "787.28cb0dcd.chunk.js.map": "/speed-typing-game-ax/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bed804f.css",
+    "static/js/main.472aa1fe.js"
+  ]
+}
