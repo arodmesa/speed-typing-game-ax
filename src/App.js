@@ -62,7 +62,7 @@ const victory= require('./victory.mp3')
         break;
       case btn_array.RESET:
         setBtnText(btn_array.START);
-        setNumChars(datos.length)
+        setNumChars(datos.value.length)
         //clearTimeout(ref_Timer.current);
         setTimerOn(false);
         setUserText('');
@@ -87,8 +87,8 @@ const victory= require('./victory.mp3')
 
   function handleChange(event){
     setUserText(event.target.value);
-    setNumChars(datos.length-event.target.value.length);
-    if (datos.length-event.target.value.length<0){
+    setNumChars(datos.value.length-event.target.value.length);
+    if (datos.value.length-event.target.value.length<0){
       ref_TextArea.current.classList.add('red_background');
     }
     else{
@@ -154,13 +154,13 @@ const victory= require('./victory.mp3')
     if(datos && timer_on===false){
       switch (dificultad){
         case dif_array.EASY:
-          setTime(Math.floor(datos.length/1.5))
+          setTime(Math.floor(datos.value.length/1))
           break;
         case dif_array.MEDIUM:
-          setTime(Math.floor(datos.length/3));
+          setTime(Math.floor(datos.value.length/2.5));
           break;
         case dif_array.HARD:
-          setTime(Math.floor(datos.length/6));
+          setTime(Math.floor(datos.value.length/5));
           break;
         default:
           break;
@@ -171,12 +171,12 @@ const victory= require('./victory.mp3')
   },[dificultad,datos, btn_text])
 
   useEffect(()=>{
-    fetch('http://api.quotable.io/random')
+    fetch('https://api.chucknorris.io/jokes/random')
     .then(res=>res.json())
     .then(data=>{
       setDatos(data);
-      setTexto(data.content)
-      setNumChars(data.length)
+      setTexto(data.value)
+      setNumChars(data.value.length)
       
     })    
   // eslint-disable-next-line react-hooks/exhaustive-deps
