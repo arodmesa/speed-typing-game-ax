@@ -67,7 +67,7 @@ code {
 
 @-moz-document url-prefix() {
   #root {
-    margin-top: 15px;
+    margin-top: 20px;
   }
 }
 
