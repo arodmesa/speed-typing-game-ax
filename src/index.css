@@ -65,6 +65,11 @@ code {
   background-color: green;
 }
 
+@-moz-document url-prefix() {
+  #root {
+    margin-top: 15px;
+  }
+}
 
 #root{
   display: flex;
